@@ -93,4 +93,12 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$PATH:$HOME/opt/gogland/bin
 
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(echo $history[$HISTCMD] | sed -re '\''s/;\s*alert\s*//'\'' )"'
+
+alias xphp="php -dxdebug.remote_enable=1 -dxdebug.remote_autostart=1"
+alias en="emacs -nw"
+alias enq="emacs -nw -q"
+alias pj="python -mjson.tool"
+alias m="mplayer -af scaletempo"
+
 alias config='/usr/bin/git --git-dir=/home/olivier/.cfg/ --work-tree=/home/olivier'
