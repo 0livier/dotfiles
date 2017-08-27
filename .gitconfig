@@ -1,0 +1,35 @@
+[user]
+    name = olivier
+    email = olivier@lol.cat
+[push]
+    default = simple
+[core]
+    excludesfile = ~/.gitignore
+[alias]
+    news = log -p HEAD@{1}..HEAD@{0}
+    st = status
+    hist = log --decorate --graph --all --oneline
+    prb = pull --rebase
+    sed = ! git grep -z --full-name -l '.' | xargs -0 sed -ri -e
+    s = stash
+    wdiff = diff --color-words='[A-z0-9_-]+|[^[:space:]]'
+    stt = status
+[merge]
+    tool = kdiff3
+[mergetool "kdiff3"]
+    path = /usr/bin/kdiff3
+    trustExitCode = false
+[mergetool]
+    keepBackup = false
+[difftool "kdiff3"]
+    path = /usr/bin/kdiff3
+    trustExitCode = false
+[difftool]
+    prompt = false
+[diff]
+    noprefix = true
+    tool = kdiff3
+[http]
+    sslVerify = false
+[help]
+    autocorrect = 1
