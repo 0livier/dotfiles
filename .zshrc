@@ -100,5 +100,5 @@ alias en="emacs -nw"
 alias enq="emacs -nw -q"
 alias pj="python -mjson.tool"
 alias m="mplayer -af scaletempo"
-
+alias gg="git grep"
 alias config='/usr/bin/git --git-dir=/home/olivier/.cfg/ --work-tree=/home/olivier'
