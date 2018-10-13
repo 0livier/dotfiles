@@ -1,6 +1,6 @@
 [user]
     name = olivier
-    email = olivier@lol.cat
+    email = olivier.garcia@algolia.com
 [push]
     default = simple
 [core]
@@ -29,7 +29,5 @@
 [diff]
     noprefix = true
     tool = kdiff3
-[http]
-    sslVerify = false
 [help]
     autocorrect = 1
