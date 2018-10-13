@@ -51,11 +51,10 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump capistrano colored-man-pages composer cp jsontools screen git-extras ssh-agent thefuck tig symfony2)
+plugins=(git autojump capistrano colored-man-pages cp jsontools screen git-extras ssh-agent thefuck tig)
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 zstyle :omz:plugins:ssh-agent identities id_rsa
-
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,18 +87,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-export GOPATH=$HOME/go
-export PATH=$PATH:$(go env GOPATH)/bin
-export PATH=$PATH:$HOME/opt/gogland/bin
-
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(echo $history[$HISTCMD] | sed -re '\''s/;\s*alert\s*//'\'' )"'
 
 alias xphp="php -dxdebug.remote_enable=1 -dxdebug.remote_autostart=1"
 alias en="emacs -nw"
 alias enq="emacs -nw -q"
 alias pj="python -mjson.tool"
-alias m="mplayer -af scaletempo"
+alias m="mpv"
 alias gg="git grep"
 alias config='/usr/bin/git --git-dir=/home/olivier/.cfg/ --work-tree=/home/olivier'
 alias p=pstorm
